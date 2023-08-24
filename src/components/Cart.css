@@ -1,0 +1,79 @@
+.cart {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: rgb(84, 30, 30);
+  height: 100vh;
+  transition: 1s;
+  left: calc(100% - 500px);
+}
+
+.listCart {
+  margin-left: 10px;
+}
+
+.listCart p {
+  text-align: end;
+  width: 300px;
+}
+
+.listCart li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+
+.listCart li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listCart li img {
+  width: 90%;
+}
+
+.listCart li button {
+  background-color: #fff5;
+  border: none;
+  padding: 10px;
+  margin: 4px;
+}
+
+.container {
+  transform: translateX(-200px);
+}
+
+.cart h1 {
+  color: #bebebe;
+  font-weight: 100;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.cart .check-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cart .check-out div {
+  background-color: #dce0e1;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.cart .check-out div:nth-child(2) {
+  background-color: #9b9b9b;
+  color: #fff;
+  font-size: 20px;
+}
